@@ -1,1 +1,5 @@
+
 %h1 Index of Pics
+= link_to "Gram it", new_pic_path
+- @pics.each do |pic|
+    %h2= pic.title
