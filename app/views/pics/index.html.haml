@@ -2,5 +2,6 @@
 %h1 Index of Pics
 %br
 - @pics.each do |pic|
+  = link_to (image_tag pic.image.url(:medium)), pic
   %h2
     =link_to pic.title, pic
